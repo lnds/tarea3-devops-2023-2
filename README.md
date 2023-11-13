@@ -16,20 +16,22 @@ Recuerda agregar tu nombre en el archivo de respuestas.
    - Caso 2: Agregar 1 película para cada uno de los directores.
    - Caso 3: Agregar 2 películas más al director Cristopher Nolan.
      
-- Agrega las siguientes lineas al `docker-compose.yml`:
-  
-```
-```
 
 Nota: El script selenium *debe estar en algún lenguaje de programación*, no se aceptará la exportación del proyecto desde Selenium IDE.
 
 ## Preguntas
 
+1. Dentro de la pirámide de testing, en que sector se ubican los tests con Selenium
+2. Indique si el front-end tiene tests unitarios. Si es así, ¿en cuáles archivos se encuentran definidos?
+3. Para probar test unitarios en GO se usa el comando `go test`. ¿Cómo tendría que modificar el archivo `docker-compose` para correr los tests unitarios del backend?
+
 ## Pauta
 
-- 2 puntos por completar el archivo `docker-compose.yml`.
-- 3 puntos por agregar el test (1 punto por cada caso implementado).
+- 1.0 puntos por completar el archivo `docker-compose.yml`.
+- 3.0 puntos por agregar el test (1 punto por cada caso implementado).
 - 0.5 puntos por la pregunta 1
 - 0.5 puntos por la pregunta 2
+- 1.0 punto por la pregunta 3
+
 
 
