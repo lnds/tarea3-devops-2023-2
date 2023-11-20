@@ -1,0 +1,580 @@
+{
+  "id": "061e70c2-1ea4-4828-9395-56540f229c1f",
+  "version": "2.0",
+  "name": "Tarea 3",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "98c34d4f-255e-4265-b577-f2733fba47e4",
+    "name": "Test de peliculas",
+    "commands": [{
+      "id": "b7fa12f6-4559-42ee-8ef5-995db1c1a081",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af6521c5-9d2c-435f-b106-98826cd45c09",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99a15e71-465c-4c9f-9fda-8d57f02a2e17",
+      "comment": "",
+      "command": "click",
+      "target": "css=#add-director-btn .w-16",
+      "targets": [
+        ["css=#add-director-btn .w-16", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5fcc99e-9cee-4411-8c24-5a553812f1e9",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id=':r8:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60bb4c89-d870-4ba8-b9bf-41fbe4f4603e",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id=':r8:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Stanley Kubrick"
+    }, {
+      "id": "0564cd09-9871-4fda-8145-55226959afbc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-min > .flex",
+      "targets": [
+        ["css=.h-min > .flex", "css:finder"],
+        ["xpath=//div[@id=':r8:']/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add Director')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83f1ef8f-b0ee-48e1-94d3-26e343bcbf2b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#add-director-btn .w-16",
+      "targets": [
+        ["css=#add-director-btn .w-16", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "549f15f0-4268-4171-ba53-26e7d924c94b",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id=':r8:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "264c47f0-47f7-4dcc-b2ae-381b5fccbc31",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id=':r8:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Orson Welles"
+    }, {
+      "id": "cff405b2-9c44-496d-8769-9edd9841098f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-min > .flex",
+      "targets": [
+        ["css=.h-min > .flex", "css:finder"],
+        ["xpath=//div[@id=':r8:']/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add Director')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c363c7a2-61aa-45e3-acbc-5fb1649a81b8",
+      "comment": "",
+      "command": "click",
+      "target": "id=:r1:-tab-0",
+      "targets": [
+        ["id=:r1:-tab-0", "id"],
+        ["css=#\\3Ar1\\3A-tab-0", "css:finder"],
+        ["xpath=//button[@id=':r1:-tab-0']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/section/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Movies')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0ece253-5194-48cd-a7e3-75279e1e9704",
+      "comment": "",
+      "command": "click",
+      "target": "css=#add-movie-btn .w-16",
+      "targets": [
+        ["css=#add-movie-btn .w-16", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9136893-76d3-4db6-8091-2aa10be5e310",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32deeaae-dcff-4777-96e0-f9c35cae9f56",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2001 A Space Odisey"
+    }, {
+      "id": "f987ff1f-ca1e-455b-a28f-15a42c588550",
+      "comment": "",
+      "command": "click",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bc32205-6e4a-4d7e-a8e5-f0dab163a2e8",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "review"
+    }, {
+      "id": "61f74b9d-2de3-4082-8fdd-b12b0917b5db",
+      "comment": "",
+      "command": "click",
+      "target": "id=year",
+      "targets": [
+        ["id=year", "id"],
+        ["css=#year", "css:finder"],
+        ["xpath=//input[@id='year']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4572ba23-32d9-47d8-88ef-5ced61bdb1e2",
+      "comment": "",
+      "command": "type",
+      "target": "id=year",
+      "targets": [
+        ["id=year", "id"],
+        ["css=#year", "css:finder"],
+        ["xpath=//input[@id='year']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1968"
+    }, {
+      "id": "86a4ff7f-6bb2-4303-993a-a0d5f190562c",
+      "comment": "",
+      "command": "click",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6292a2c-ebde-4f85-88aa-842f70f5d8b1",
+      "comment": "",
+      "command": "select",
+      "target": "id=director_id",
+      "targets": [],
+      "value": "label=Stanley Kubrick"
+    }, {
+      "id": "120fedfa-fb09-4640-a720-506641931bbe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-min > .flex",
+      "targets": [
+        ["css=.h-min > .flex", "css:finder"],
+        ["xpath=//div[@id=':r4:']/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add Movie')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb14a8d9-0a42-4358-bf9d-87270bb8fdef",
+      "comment": "",
+      "command": "click",
+      "target": "css=#add-movie-btn > .flex",
+      "targets": [
+        ["css=#add-movie-btn > .flex", "css:finder"],
+        ["xpath=//button[@id='add-movie-btn']/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39c40db0-8b35-4c21-88d7-980f24353b64",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01c427c9-a6d2-40b1-82cd-0749c0c86524",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Citizen Kane"
+    }, {
+      "id": "0dc68a41-9896-40ee-a046-025fae62ffeb",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "review"
+    }, {
+      "id": "bf6ff186-8d4a-4c18-9ebb-a7d62462a93a",
+      "comment": "",
+      "command": "type",
+      "target": "id=year",
+      "targets": [
+        ["id=year", "id"],
+        ["css=#year", "css:finder"],
+        ["xpath=//input[@id='year']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1941"
+    }, {
+      "id": "ed74d4af-0494-4e5b-96e6-2deca9bf5f9f",
+      "comment": "",
+      "command": "click",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93dc13ce-b184-40aa-b65b-e5c00a762c6b",
+      "comment": "",
+      "command": "select",
+      "target": "id=director_id",
+      "targets": [],
+      "value": "label=Orson Welles"
+    }, {
+      "id": "fc8d4fd1-5654-4ca5-9f5a-640146bfb12c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-min > .flex",
+      "targets": [
+        ["css=.h-min > .flex", "css:finder"],
+        ["xpath=//div[@id=':r4:']/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add Movie')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d36ff27-2f60-4160-b8d8-a918471f17c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#add-movie-btn .w-16",
+      "targets": [
+        ["css=#add-movie-btn .w-16", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef9239fe-fe04-42fa-b1d9-7c872277b1bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bdbeaf2-f7da-49c7-9b74-fd8221d968b2",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Tenet"
+    }, {
+      "id": "805ae074-5bfa-4cfb-afec-a6fa34445461",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex-1",
+      "targets": [
+        ["css=.flex-1", "css:finder"],
+        ["xpath=//div[@id=':r4:']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06b6112f-c868-45b6-91b3-eda5365ca758",
+      "comment": "",
+      "command": "click",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc11dcb6-8b5b-4220-9085-d8c1216d00c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "review"
+    }, {
+      "id": "2b02e403-3260-4576-998c-7c48b08fda67",
+      "comment": "",
+      "command": "click",
+      "target": "id=year",
+      "targets": [
+        ["id=year", "id"],
+        ["css=#year", "css:finder"],
+        ["xpath=//input[@id='year']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82d21821-f8fc-49be-999d-4e0146e80b89",
+      "comment": "",
+      "command": "type",
+      "target": "id=year",
+      "targets": [
+        ["id=year", "id"],
+        ["css=#year", "css:finder"],
+        ["xpath=//input[@id='year']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "2020"
+    }, {
+      "id": "447197d3-950a-440e-a74c-cabafe71058f",
+      "comment": "",
+      "command": "click",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ccd9ddb-d9e8-4b86-912d-1c0404de75b3",
+      "comment": "",
+      "command": "select",
+      "target": "id=director_id",
+      "targets": [],
+      "value": "label=Cristopher Nolan"
+    }, {
+      "id": "20603050-cc7a-41c1-bfdd-08baeee3c7f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-min > .flex",
+      "targets": [
+        ["css=.h-min > .flex", "css:finder"],
+        ["xpath=//div[@id=':r4:']/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add Movie')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c2b2ebe-c1aa-491a-917b-4f4a3864b80d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#add-movie-btn .w-16",
+      "targets": [
+        ["css=#add-movie-btn .w-16", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bb0f1a6-63bc-43ce-8472-5df1435b026a",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fc02faa-ea55-4bcc-b5c7-3fe0a3e89088",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "The Prestige"
+    }, {
+      "id": "d1312fee-79ba-4272-b9e5-cd2816c5f6bd",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "review"
+    }, {
+      "id": "47a3c384-4415-4bee-8f8c-dfc88e1f0672",
+      "comment": "",
+      "command": "type",
+      "target": "id=year",
+      "targets": [
+        ["id=year", "id"],
+        ["css=#year", "css:finder"],
+        ["xpath=//input[@id='year']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "2006"
+    }, {
+      "id": "b91afbbc-bab2-467c-a5ef-c2e818f14bb4",
+      "comment": "",
+      "command": "click",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47e7baeb-9d7b-4bac-b76c-3ad3e3251aa9",
+      "comment": "",
+      "command": "select",
+      "target": "id=director_id",
+      "targets": [],
+      "value": "label=Cristopher Nolan"
+    }, {
+      "id": "d5c6d846-4496-4b6f-9cea-08ef9d79000e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-min > .flex",
+      "targets": [
+        ["css=.h-min > .flex", "css:finder"],
+        ["xpath=//div[@id=':r4:']/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add Movie')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7e18c81d-c3fa-4bc9-96d3-a8590873d6dd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["98c34d4f-255e-4265-b577-f2733fba47e4"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}
