@@ -1,3 +1,5 @@
+Respuestas Daniel Concha Pacheco
+
 1. Dentro de la pirámide de testing, ¿en que sector se ubican los tests con Selenium? ¿A cuál o cuáles tipos de test coresponde (regresión, integración, aceptación, etc).
 R. Corresponde a las pruebas funcionales. De las pruebas funcionales, con Selenium se pueden ejecutar las pruebas de Aceptación, Regresión, Integración.
 
