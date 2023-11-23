@@ -52,7 +52,7 @@ const AddDirector = ({ onHide }) => {
                     <TextInput id="name" sizing="md" type="text" onChange={e => setName(e.target.value)} autoComplete="off" />
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button onClick={e => saveDirector(e)}>Add Director</Button>
+                    <Button id="bttnAddDirector" onClick={e => saveDirector(e)}>Add Director</Button>
                 </Modal.Footer>
             </Modal>
         </>

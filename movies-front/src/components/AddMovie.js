@@ -90,7 +90,7 @@ const AddMovie = ({ onHide }) => {
                     </Select>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button onClick={e => saveMovie(e)}>Add Movie</Button>
+                    <Button id="btnAddMovie" onClick={e => saveMovie(e)}>Add Movie</Button>
                 </Modal.Footer>
             </Modal>
         </Fragment>
