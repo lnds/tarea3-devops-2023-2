@@ -1,0 +1,69 @@
+version: "3"
+services:
+  movies-front:
+    container_name: movies-front
+    build:
+      context: ./movies-front/
+      dockerfile: Dockerfile
+    command: npm start
+    ports:
+      - ${REACT_PORT}:${REACT_PORT}
+    environment:
+      - REACT_PORT
+      - REACT_APP_API_URI
+    # completa esta seccion, lee el archivo README en la carpeta movies-front
+    volumes:
+      - ./movies-front:/usr/app
+      - /usr/app/node_modules
+    depends_on:
+      - movies-api
+
+  movies-api:
+    container_name: movies-api
+    restart: always
+    build:
+      context: ./movies-api/
+      dockerfile: Dockerfile
+    command: /movies-api -b ${BIND_IP} -p ${BIND_PORT}
+    ports:
+      - ${BIND_PORT}:${BIND_PORT}
+    expose:
+      - ${BIND_IP}
+    environment:
+      - BIND_IP
+      - BIND_PORT
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB
+      - POSTGRES_SERVER
+      - POSTGRES_PORT
+    depends_on:
+      - postgres
+
+      # completa esta seccion, lee el archivo README en la carpeta movies-api
+
+  postgres:
+    image: postgres:15.3
+    restart: always
+    environment:
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB
+      - POSTGRES_PORT
+    expose:
+      - ${POSTGRES_PORT}
+    container_name: postgres
+
+  flyway:
+    image: flyway/flyway:latest
+    container_name: migration_flyway
+    environment:
+      - FLYWAY_USER=${POSTGRES_USER}
+      - FLYWAY_PASSWORD=${POSTGRES_PASSWORD}
+      - FLYWAY_URL=jdbc:postgresql://${POSTGRES_SERVER}:${POSTGRES_PORT}/${POSTGRES_DB}
+      - FLYWAY_GROUP=true
+    command: -locations=filesystem:/flyway/sql -connectRetries=60 migrate
+    volumes:
+      - ./sql_migrations:/flyway/sql
+    depends_on:
+      - postgres
