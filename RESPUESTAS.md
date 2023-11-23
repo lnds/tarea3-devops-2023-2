@@ -17,6 +17,8 @@ node test-movies.js
 
 
 
+
+
 1.- Dentro de la pirámide de testing, ¿en que sector se ubican los tests con Selenium? ¿A cuál o cuáles tipos de test coresponde (regresión, integración, aceptación, etc).
 
 Respuesta 1:
@@ -45,7 +47,10 @@ Si el fornt-end tiene tests unitarios en los siguientes archivos:
 
 Respuesta 3:
 
-se necesita realizar algunas modificaciones al archivo docker-compose.yml para configurar el entorno de ejecución de las pruebas, como el ejemplo que se muestra a continuación:
+se necesita realizar algunas modificaciones al archivo docker-compose.yml para configurar el entorno de ejecución de las pruebas, Se crea un nuevo servicio llamado "test", en el docker-compose.yml que construye una imagen a partir del mismo contexto que el backend, "./movies-api",  utilizando el mismo Dockerfile. luego ejeucta el comando "go test ./..." para ejecutar todos los tests unitarios en el directorio del backend.
+
+
+como el ejemplo que se muestra a continuación:
 
 
 test:
@@ -55,3 +60,6 @@ test:
     command: go test ./... # Comando para ejecutar los tests unitarios
     depends_on:
       - movies-api
+
+
+
