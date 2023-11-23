@@ -1,5 +1,19 @@
 Nombre: Jimena Silva Navarrete
 
+Para ejecutar los test, sefuir los siguientes pasos:
+
+1.- Moverse a la carpeta de test:
+cd test   
+
+2.- Cargar dependencias:
+npm install
+
+3.- Ejecutar los tests:
+node test-directors.js
+node test-movies.js
+
+
+
 
 1.- Dentro de la pirámide de testing, ¿en que sector se ubican los tests con Selenium? ¿A cuál o cuáles tipos de test coresponde (regresión, integración, aceptación, etc).
 
