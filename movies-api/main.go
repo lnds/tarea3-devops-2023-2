@@ -2,11 +2,13 @@ package main
 
 import (
 	"github.com/spf13/cobra"
+	"os"
 )
 
 func main() {
-	var bind string
-	var port string = "8080"
+	bind  := os.Getenv("BIND_IP")
+
+	port  := os.Getenv("BIND_PORT")
 
 	var rootCmd = &cobra.Command{
 		Use:   "api",
