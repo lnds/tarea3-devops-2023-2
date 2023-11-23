@@ -8,8 +8,10 @@ cd test
 2.- Cargar dependencias:
 npm install
 
-3.- Ejecutar los tests:
+3.- Ejecutar los tests directors:
 node test-directors.js
+
+4.- Ejecutar los tests movies:
 node test-movies.js
 
 
