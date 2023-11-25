@@ -26,10 +26,10 @@ TEST DE PERFORMANCE: Evaluar el rendimiento del sistema en términos de velocida
 TEST UNITARIO: Verificar el correcto funcionamiento de las unidades más pequeñas de código, como funciones o métodos individuales. Se prueba cada unidad de forma aislada para garantizar que produzca los resultados esperados y cumpla con los requisitos especificados.  
 
 ### Selenium corresponde a un test de integración, porque evaluá el funcionamiento de la aplicación como sistema completo, en la medida que es utilizado. Obteniendo resultados y incorporando entradas a través de la interfaz de la aplicación construida.  
-### Selenium no parece ser un test de peticionan, porque aunque podría permitir evaluar requerimientos de clientes, es esperable que estos ya estén resueltos, como por ejemplo poder agregar una película o director en nuestra aplicación.  
-### Más aya de para decir si el código integrado dejo de funcionar, no parece que selenium sea un test adecuado para decir si modificaciones en el código afectan la aplican.  
-### Selenium podría utilizarse para medir el permanecer de una aplicación, especialmente uno podría medir el tiempo que tarda en realizarse algunas sus acciones, pero no parece ese ser el objetivo de Selenium.  
-### Selenium no tiene un enfoque de test unitario, porque prueba las acciones realizadas en la prueba desde la interfaz, probando el funcionamiento de la aplicación de manera integrada. Aunque con conocimiento especifico de la aplicación, uno podría probar módulos específicos con selenium, definiendo específicamente las pruebas.   
+### Selenium no parece ser un test de aceptación, porque aunque podría permitir evaluar requerimientos de clientes, es esperable que estos ya estén resueltos, como por ejemplo poder agregar una película o director en nuestra aplicación.  
+### Más aya de para decir si el código integrado dejo de funcionar, no parece que selenium sea un test adecuado para decir si modificaciones en el código afectan la aplican, por lo que no parece ser de regresión.  
+### Selenium podría utilizarse para medir el performance de una aplicación, especialmente uno podría medir el tiempo que tarda en realizarse algunas sus acciones, pero no parece ese ser el objetivo de Selenium.  
+### Selenium no tiene un enfoque de test unitario, porque prueba las acciones realizadas en la prueba desde la interfaz, probando el funcionamiento de la aplicación de manera integrada. Aunque con conocimiento especifico de la aplicación, uno podría probar módulos específicos con selenium, definiendo las pruebas con ese objetivo.   
 
 
 ### 2. Indique si el front-end tiene tests unitarios. Si es así, ¿en cuáles archivos se encuentran definidos?
