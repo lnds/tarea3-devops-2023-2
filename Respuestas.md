@@ -33,7 +33,7 @@ Más aya de para decir si el código integrado dejo de funcionar, no parece que 
 
 Selenium podría utilizarse para medir el performance de una aplicación, especialmente uno podría medir el tiempo que tarda en realizarse algunas sus acciones, pero no parece ese ser el objetivo de Selenium.  
 
-Selenium no tiene un enfoque de test unitario, porque prueba las acciones realizadas en la prueba desde la interfaz, probando el funcionamiento de la aplicación de manera integrada. Aunque con conocimiento especifico de la aplicación, uno podría probar módulos específicos con selenium, definiendo las pruebas con ese objetivo.   
+Selenium no tiene un enfoque de test unitario, porque prueba las acciones realizadas desde la interfaz, probando el funcionamiento de la aplicación de manera integrada. Aunque con conocimiento especifico y detallado de la aplicación, uno podría probar módulos específicos con selenium, definiendo las pruebas con ese objetivo, este no parece ser el propocinto de la aplicación.   
 
 ### 2. Indique si el front-end tiene tests unitarios. Si es así, ¿en cuáles archivos se encuentran definidos?
 
