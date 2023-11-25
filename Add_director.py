@@ -17,7 +17,17 @@ try:
     ActionChains(driver).move_to_element(director_button).release().perform()
 
     driver.find_element(By.ID, "name").click()
-    driver.find_element(By.ID, "name").send_keys("Director 7")
+    driver.find_element(By.ID, "name").send_keys("Director 1")
+
+    add_director_button = driver.find_element(By.CSS_SELECTOR, ".h-min > .flex")
+    ActionChains(driver).move_to_element(add_director_button).click().perform()
+
+    ActionChains(driver).move_to_element(director_button).click().perform()
+    ActionChains(driver).move_to_element(director_button).perform()
+    ActionChains(driver).move_to_element(director_button).release().perform()
+
+    driver.find_element(By.ID, "name").click()
+    driver.find_element(By.ID, "name").send_keys("Director 2")
 
     add_director_button = driver.find_element(By.CSS_SELECTOR, ".h-min > .flex")
     ActionChains(driver).move_to_element(add_director_button).click().perform()
