@@ -1,0 +1,90 @@
+version: '3'
+services:
+  movies-front:
+    build: 
+      context: ./movies-front/
+      dockerfile: Dockerfile
+    image: movies-front
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    volumes:
+      - ./movies-front:/usr/app
+      - /usr/app/node_modules
+    ports:
+      - ${REACT_PORT}:${REACT_PORT}
+    environment:
+      - REACT_PORT=${REACT_PORT}
+      - REACT_APP_API_URI=${REACT_APP_API_URI}
+    command: [ "npm", "start" ]
+    depends_on:
+      - movies-api
+
+  movies-api:
+    build: 
+      context: ./movies-api/
+      target: build-release-stage
+      dockerfile: Dockerfile
+    image: movies-api
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    environment:
+      - BIND_IP=${BIND_IP}
+      - BIND_PORT=${BIND_PORT}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_SERVER=${POSTGRES_SERVER}
+      - POSTGRES_PORT=${POSTGRES_PORT}
+    command: /movies-api -b ${BIND_IP} -p ${BIND_PORT}
+    expose:
+      - ${BIND_PORT}
+    ports:
+      - ${BIND_PORT}:${BIND_PORT}
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  postgres:
+    image: postgres:15.3
+    container_name: dbserver
+    restart: always
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_PORT=${POSTGRES_PORT}
+    expose:
+      - ${POSTGRES_PORT}
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - ${POSTGRES_PORT}:${POSTGRES_PORT}
+    healthcheck:
+      test: ["CMD-SHELL", "sh -c 'pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}'"]
+      interval: 10s
+      timeout: 3s
+      retries: 3 
+
+  flyway:
+    image: flyway/flyway:latest
+    container_name: migration_flyway
+    environment:
+      - FLYWAY_USER=${POSTGRES_USER}
+      - FLYWAY_PASSWORD=${POSTGRES_PASSWORD}
+      - FLYWAY_URL=jdbc:postgresql://${POSTGRES_SERVER}:${POSTGRES_PORT}/${POSTGRES_DB}
+      - FLYWAY_GROUP=true
+    command: ["-url=jdbc:postgresql://${POSTGRES_SERVER}:${POSTGRES_PORT}/${POSTGRES_DB}", "-user=${POSTGRES_USER}", "-password=${POSTGRES_PASSWORD}", "migrate"]
+    volumes:
+      - ./sql_migrations:/flyway/sql
+    depends_on:
+      - postgres
+
+volumes:
+  db-data:
