@@ -33,7 +33,7 @@ Más aya de para decir si el código integrado dejo de funcionar, no parece que 
 
 Selenium podría utilizarse para medir el performance de una aplicación, especialmente uno podría medir el tiempo que tarda en realizarse algunas sus acciones, pero no parece ese ser el objetivo de Selenium.  
 
-Selenium no tiene un enfoque de test unitario, porque prueba las acciones realizadas desde la interfaz, probando el funcionamiento de la aplicación de manera integrada. Aunque con conocimiento especifico y detallado de la aplicación, uno podría probar módulos específicos con selenium, definiendo las pruebas con ese objetivo, este no parece ser el propocinto de la aplicación.   
+Selenium no tiene un enfoque de test unitario, porque prueba las acciones realizadas desde la interfaz, probando el funcionamiento de la aplicación de manera integrada. Aunque con conocimiento especifico y detallado de la aplicación, uno podría probar módulos específicos con selenium, definiendo las pruebas con ese objetivo, este no parece ser el propósito de la aplicación.   
 
 ### 2. Indique si el front-end tiene tests unitarios. Si es así, ¿en cuáles archivos se encuentran definidos?
 
@@ -41,7 +41,16 @@ Selenium no tiene un enfoque de test unitario, porque prueba las acciones realiz
 
 ### 3. Para probar test unitarios en GO se usa el comando `go test`. ¿Cómo tendría que modificar el archivo `docker-compose` para correr los tests unitarios del backend?
 
+### Primero habría que Asegurarse de que exista un Dockerfile que tenga las instrucciones adecuadas para construir la imagen de Docker para el backend de Go.
+### Luego, en el docker-compose.yml, habría que agregar un servicio específico para ejecutar las pruebas unitarias.
 
+Un ejemplo de modificación en el docker-compose que encontré es:
 
+  backend-test:
+    build:
+      context: ./path_to_backend                # Dirección del servicio                
+    volumes:
+      - ./path_to_backend:/go/src/app           # Volumen
+    command: go test ./...                      # Ejecutar pruebas en paquete actual y sub directorio
 
 
