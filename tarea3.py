@@ -32,7 +32,7 @@ class PythonOrgSearch(unittest.TestCase):
         self.driver.find_element(By.ID, "title").click()
         self.driver.find_element(By.ID, "title").send_keys("Star Wars")
         self.driver.find_element(By.ID, "description").click()
-        self.driver.find_element(By.ID, "description").send_keys("Es una película de ciencia ficción")
+        self.driver.find_element(By.ID, "description").send_keys("Es una película de ciencia ficción, en la cual se vive una guerra de distintos mundos, incluye mitología y temas musicales.")
         self.driver.find_element(By.ID, "year").click()
         self.driver.find_element(By.ID, "year").send_keys("1983")
         self.driver.find_element(By.ID, "director_id").click()
