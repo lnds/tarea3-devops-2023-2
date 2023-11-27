@@ -1,0 +1,80 @@
+version: '3'
+services:
+  #Contenedor para el Frontend
+  movies-front:
+    build:
+     context: ./movies-front/
+     dockerfile: Dockerfile
+    volumes:
+      - ./movies-front:/usr/app
+      - /usr/app/node_modules
+    depends_on:
+      - movies-api
+    expose:
+      - ${REACT_PORT}
+    ports:
+      - ${REACT_PORT}:${REACT_PORT}
+    command: npm start
+    environment:
+      - REACT_PORT=${REACT_PORT}
+      - REACT_APP_API_URI=${REACT_APP_API_URI}
+      
+  #Contenedor para el Backend
+  movies-api: 
+    build:
+     context: ./movies-api/
+     target: build-release-stage
+     dockerfile: Dockerfile
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_PORT=${POSTGRES_PORT}      
+      - BIND_IP=${BIND_IP}
+      - BIND_PORT=${BIND_PORT}
+      - POSTGRES_SERVER=${POSTGRES_SERVER}
+    expose:
+      - ${BIND_PORT}
+    command: /movies-api -b ${BIND_IP} -p ${BIND_PORT}
+    ports:
+      - ${BIND_PORT}:${BIND_PORT}
+    depends_on:
+      - postgres
+    restart: always
+  
+  #Contenedor para Base de Datos
+  postgres:
+    image: postgres:15.3
+    restart: always
+    container_name: postgresBD
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_PORT=${POSTGRES_PORT}
+    expose:
+      - ${POSTGRES_PORT}
+
+  flyway:
+    image: flyway/flyway:latest
+    container_name: migration_flyway
+    environment:
+      - FLYWAY_USER=${POSTGRES_USER}
+      - FLYWAY_PASSWORD=${POSTGRES_PASSWORD}
+      - FLYWAY_URL=jdbc:postgresql://${POSTGRES_SERVER}:${POSTGRES_PORT}/${POSTGRES_DB}
+      - FLYWAY_GROUP=true
+    command: -locations=filesystem:/flyway/sql -connectRetries=60 migrate
+    volumes:
+      - ./sql_migrations:/flyway/sql
+    depends_on:
+      - postgres
+
+  pgAdmin:
+    depends_on:
+      - postgres
+    image: dpage/pgadmin4:6.17
+    ports:
+      - "7070:80"
+    environment:
+      - PGADMIN_DEFAULT_PASSWORD=${PG_ADMIN_PASSWORD}
+      - PGADMIN_DEFAULT_EMAIL=${PG_ADMIN_EMAIL}
