@@ -41,7 +41,7 @@ Selenium no tiene un enfoque de test unitario, porque prueba las acciones realiz
 
 ### 3. Para probar test unitarios en GO se usa el comando `go test`. ¿Cómo tendría que modificar el archivo `docker-compose` para correr los tests unitarios del backend?
   
-### Primero habría que Asegurarse de que exista un Dockerfile que tenga las instrucciones adecuadas para construir la imagen de Docker para el backend de Go.  
+### Primero habría que asegurarse de que exista un dockerfile que tenga las instrucciones adecuadas para construir la imagen de Docker para el backend de Go.  
 ### Luego, en el docker-compose.yml, habría que agregar un servicio específico para ejecutar las pruebas unitarias.  
   
 Un ejemplo de modificación en el docker-compose que encontré es:  
