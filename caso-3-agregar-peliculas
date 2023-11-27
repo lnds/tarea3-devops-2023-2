@@ -1,0 +1,53 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.ui import Select
+import time
+
+driver = webdriver.Chrome()
+driver.get("http://localhost:3000")
+
+try:
+    driver.find_element(By.ID, ":r1:-tab-0").click()
+    add_movie_button = driver.find_element(By.CSS_SELECTOR, "#add-movie-btn > .flex")
+    ActionChains(driver).move_to_element(add_movie_button).click().perform()
+    ActionChains(driver).move_to_element(add_movie_button).release().perform()
+
+    driver.find_element(By.ID, "title").send_keys("Fama vs Fama")
+    driver.find_element(By.ID, "description").send_keys("La Mejor Pelicula de Nolan")
+    driver.find_element(By.ID, "year").send_keys("2009")
+    driver.find_element(By.ID, "description").click()
+    driver.find_element(By.ID, "director_id").click()
+       
+    dropdown = driver.find_element(By.ID, "director_id")
+    dropdown.find_element(By.XPATH, "//option[. = 'Cristopher Nolan']").click()
+    
+    time.sleep(60)
+    add_movie_button = driver.find_element(By.CSS_SELECTOR, ".h-min > .flex")
+    ActionChains(driver).move_to_element(add_movie_button).click().perform()
+    ActionChains(driver).move_to_element(add_movie_button).release().perform()
+
+    driver.find_element(By.ID, "title").send_keys("LA GRANJA")
+    driver.find_element(By.ID, "description").send_keys("Estreno")
+    driver.find_element(By.ID, "year").send_keys("2010")
+    driver.find_element(By.ID, "description").click()
+    driver.find_element(By.ID, "director_id").click()
+       
+    dropdown = driver.find_element(By.ID, "director_id")
+    dropdown.find_element(By.XPATH, "//option[. = 'Cristopher Nolan']").click()
+    
+    time.sleep(60)
+    add_movie_button = driver.find_element(By.CSS_SELECTOR, ".h-min > .flex")
+    ActionChains(driver).move_to_element(add_movie_button).click().perform()
+    ActionChains(driver).move_to_element(add_movie_button).release().perform()
+
+    
+    time.sleep(60)
+    print("se agrega pelicula2 Nolan") 
+    
+except Exception as e:
+    print(f"Error: {str(e)}")
+
+finally:
+    driver.quit()
