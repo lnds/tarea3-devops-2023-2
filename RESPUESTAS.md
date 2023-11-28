@@ -2,7 +2,7 @@
 
 #Marisleydis Socas Alvez- Equipo 3.
 
-#Los test se encuentran en la carpeta TEST.
+#Los test se encuentran en la carpeta Selenium Test.
 
 ## Preguntas
 
