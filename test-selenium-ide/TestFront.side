@@ -1,0 +1,1164 @@
+{
+  "id": "b5a2d8a4-082e-4a5d-826b-094b2372d818",
+  "version": "2.0",
+  "name": "TestFront",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "5023fec6-7998-4dd8-a721-d22500109d46",
+    "name": "Caso-1: 2-directores",
+    "commands": [{
+      "id": "869b9814-c719-4532-9a8b-88188b460262",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9982c87-92bd-472b-bb39-8dcc9e7862f3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08b7eeed-3ebb-43a2-a701-17196d7c17ef",
+      "comment": "",
+      "command": "click",
+      "target": "id=:r1:-tab-1",
+      "targets": [
+        ["id=:r1:-tab-1", "id"],
+        ["css=#\\3Ar1\\3A-tab-1", "css:finder"],
+        ["xpath=//button[@id=':r1:-tab-1']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/section/div/div/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Directors')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61610d1a-3990-43fe-99d0-ca8b124faf58",
+      "comment": "",
+      "command": "click",
+      "target": "css=#add-director-btn path",
+      "targets": [
+        ["css=#add-director-btn path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d94231c-eabc-4ce5-8d7c-7d0dfc135f5f",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id=':r8:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d85bed27-1061-43a4-a937-6224257d9bea",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id=':r8:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "director-uno"
+    }, {
+      "id": "4caee0d8-3e66-4863-b0ae-81781187ba73",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-min > .flex",
+      "targets": [
+        ["css=.h-min > .flex", "css:finder"],
+        ["xpath=//div[@id=':r8:']/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add Director')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e13cec56-3943-4d0d-8a3d-6f4b937f3bdf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#add-director-btn path",
+      "targets": [
+        ["css=#add-director-btn path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "735c0037-9e3b-443d-a241-bfe0680d1910",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id=':r8:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2cc67a6-8dce-4407-baaf-7bcde4bae675",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id=':r8:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "director-dos"
+    }, {
+      "id": "7c5f06ae-cd34-45b3-854c-9f619579746b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-min > .flex",
+      "targets": [
+        ["css=.h-min > .flex", "css:finder"],
+        ["xpath=//div[@id=':r8:']/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add Director')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67dc2133-706c-4157-9945-310e6bf543e0",
+      "comment": "",
+      "command": "click",
+      "target": "id=:r1:-tab-0",
+      "targets": [
+        ["id=:r1:-tab-0", "id"],
+        ["css=#\\3Ar1\\3A-tab-0", "css:finder"],
+        ["xpath=//button[@id=':r1:-tab-0']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/section/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Movies')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9114a9ee-d3f0-4844-91fd-6a54ede429e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#add-movie-btn path",
+      "targets": [
+        ["css=#add-movie-btn path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "27ae43b3-6397-4ab1-b4bb-c8754c5dbb72",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#add-movie-btn path",
+      "targets": [
+        ["css=#add-movie-btn path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "92d56bc0-5819-4544-b6a0-078ac4b3aabc",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#add-movie-btn path",
+      "targets": [
+        ["css=#add-movie-btn path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "571ecd32-0ef3-4858-84e7-6d42a62acab6",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c5a0ce6-6e62-40e2-8d9b-44818dbbb024",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pelicula uno"
+    }, {
+      "id": "44be9f53-9dee-4e89-819c-b0dd1b67b898",
+      "comment": "",
+      "command": "click",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aac7caa2-4fd0-4fcc-84f4-13c521d01617",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "pelicula uno"
+    }, {
+      "id": "ade1d26d-b3d8-44a1-8fe2-e1678e98ef49",
+      "comment": "",
+      "command": "click",
+      "target": "id=year",
+      "targets": [
+        ["id=year", "id"],
+        ["css=#year", "css:finder"],
+        ["xpath=//input[@id='year']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e49fd9f-8ba5-434a-aecb-a3ab63eeffd2",
+      "comment": "",
+      "command": "type",
+      "target": "id=year",
+      "targets": [
+        ["id=year", "id"],
+        ["css=#year", "css:finder"],
+        ["xpath=//input[@id='year']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1990"
+    }, {
+      "id": "cd2633ff-7b68-4395-83b1-8ef4a0fdb21d",
+      "comment": "",
+      "command": "select",
+      "target": "id=director_id",
+      "targets": [],
+      "value": "label=director-uno"
+    }, {
+      "id": "af463ab3-485d-4c25-9580-1d413bf3e48a",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "0,-0.5"
+    }, {
+      "id": "1c97d7c5-927b-422f-8c61-0f3235c5b2a8",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "0,-0.5"
+    }, {
+      "id": "07006d37-e764-479a-844c-d56a63c3d174",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "0,-0.5"
+    }, {
+      "id": "feb1bc1e-a895-41ee-95a4-9cca3804c748",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-min > .flex",
+      "targets": [
+        ["css=.h-min > .flex", "css:finder"],
+        ["xpath=//div[@id=':r4:']/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add Movie')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "039ff484-e1dc-4247-86f3-a8931920fbd3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#add-movie-btn .w-16",
+      "targets": [
+        ["css=#add-movie-btn .w-16", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb82cafc-3bef-444e-b34d-e162c4c6987a",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90103b12-d517-4577-a59e-be45283dd3ca",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pelicula dos"
+    }, {
+      "id": "56e0149c-a652-4877-baae-7351469d44e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85980281-927b-471c-a53c-6c9b75b4f1cd",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "pelicula dos"
+    }, {
+      "id": "2495e98f-ef74-48ec-9b2f-ae910998362f",
+      "comment": "",
+      "command": "click",
+      "target": "id=year",
+      "targets": [
+        ["id=year", "id"],
+        ["css=#year", "css:finder"],
+        ["xpath=//input[@id='year']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d256a144-7c18-4741-840b-bc2bac6bbeb8",
+      "comment": "",
+      "command": "type",
+      "target": "id=year",
+      "targets": [
+        ["id=year", "id"],
+        ["css=#year", "css:finder"],
+        ["xpath=//input[@id='year']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1990"
+    }, {
+      "id": "8c66dd87-12e9-4a78-9ec0-381ab3d22886",
+      "comment": "",
+      "command": "select",
+      "target": "id=director_id",
+      "targets": [],
+      "value": "label=director-dos"
+    }, {
+      "id": "a5f6b608-97c6-481a-bd67-f11a753ceeaf",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "0,-0.5"
+    }, {
+      "id": "757b09b4-fe96-460a-9320-f5b2b298ece7",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "0,-0.5"
+    }, {
+      "id": "8da3e5b5-30df-48ef-8d62-237be7a4900f",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "0,-0.5"
+    }, {
+      "id": "de321767-8c0a-4a9f-b128-adbda142fb68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-min > .flex",
+      "targets": [
+        ["css=.h-min > .flex", "css:finder"],
+        ["xpath=//div[@id=':r4:']/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add Movie')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c9a64f9-c90d-4564-8070-0977c435577e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d45f261f-620c-4f9d-90e8-a7fa17900e4a",
+    "name": "Caso-2: 1 película x director",
+    "commands": [{
+      "id": "9f80e098-db1d-42b1-9813-60dd20684871",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86c34b77-ef46-44dd-a0ab-d6fd553f2850",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d95639c-3666-42d6-a747-e448a5ada941",
+      "comment": "",
+      "command": "click",
+      "target": "id=:r1:-tab-0",
+      "targets": [
+        ["id=:r1:-tab-0", "id"],
+        ["css=#\\3Ar1\\3A-tab-0", "css:finder"],
+        ["xpath=//button[@id=':r1:-tab-0']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/section/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Movies')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "328124df-86d7-4610-86ab-1296d6d686fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#add-movie-btn .w-16",
+      "targets": [
+        ["css=#add-movie-btn .w-16", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "caf8c7ae-5a6e-418c-9747-261dbc7473f0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#add-movie-btn .w-16",
+      "targets": [
+        ["css=#add-movie-btn .w-16", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fbf8784-6d7c-4fb9-9267-326680cc47a4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#add-movie-btn .w-16",
+      "targets": [
+        ["css=#add-movie-btn .w-16", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "167981d0-ffe8-4571-ae14-ea08c659f003",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "983ac3be-0de8-4d21-8d92-0dd2ffdef024",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pelicula uno"
+    }, {
+      "id": "6379215d-2845-4309-a235-9227b5b6b76d",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "pelicula uno"
+    }, {
+      "id": "786fe4e8-f366-4845-be1e-345e5151d192",
+      "comment": "",
+      "command": "type",
+      "target": "id=year",
+      "targets": [
+        ["id=year", "id"],
+        ["css=#year", "css:finder"],
+        ["xpath=//input[@id='year']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1990"
+    }, {
+      "id": "1676fbbb-ea61-4b4a-842d-51f77cf26899",
+      "comment": "",
+      "command": "select",
+      "target": "id=director_id",
+      "targets": [],
+      "value": "label=director-uno"
+    }, {
+      "id": "76b8632c-dc35-4683-aa2f-d68345ee5787",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "0,-0.5"
+    }, {
+      "id": "a783dd14-f304-4a0c-a226-bd36af45f618",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "0,-0.5"
+    }, {
+      "id": "442cbce9-d6a8-41cf-acf5-74047dbfcd59",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "0,-0.5"
+    }, {
+      "id": "a8ed4fa8-194e-4fca-a856-c19fde3a72d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-min > .flex",
+      "targets": [
+        ["css=.h-min > .flex", "css:finder"],
+        ["xpath=//div[@id=':r4:']/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add Movie')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "60efb87f-bbec-4e23-bd4c-b154143bba19",
+      "comment": "",
+      "command": "click",
+      "target": "css=#add-movie-btn .w-16",
+      "targets": [
+        ["css=#add-movie-btn .w-16", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d966b6f4-d696-4360-8da3-765d3168bcba",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#add-movie-btn .w-16",
+      "targets": [
+        ["css=#add-movie-btn .w-16", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b63e81e-42c0-4521-91e4-b814192ff692",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#add-movie-btn .w-16",
+      "targets": [
+        ["css=#add-movie-btn .w-16", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e321bce-4942-4afe-8eac-ab76cc275095",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84ce7111-fd3d-4e8d-868e-35cb3323f055",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pelicula dos"
+    }, {
+      "id": "df7fdf04-4e4d-4bf9-9241-79303a5cd9c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "pelicula dos"
+    }, {
+      "id": "67f5236d-5110-4402-9db5-bbfd35cb907a",
+      "comment": "",
+      "command": "click",
+      "target": "id=year",
+      "targets": [
+        ["id=year", "id"],
+        ["css=#year", "css:finder"],
+        ["xpath=//input[@id='year']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee2df491-646e-4cbf-b9dc-e1cd8766ec34",
+      "comment": "",
+      "command": "type",
+      "target": "id=year",
+      "targets": [
+        ["id=year", "id"],
+        ["css=#year", "css:finder"],
+        ["xpath=//input[@id='year']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1990"
+    }, {
+      "id": "3430830b-c7cf-4500-8643-34568b1b8c85",
+      "comment": "",
+      "command": "select",
+      "target": "id=director_id",
+      "targets": [],
+      "value": "label=director-dos"
+    }, {
+      "id": "12a98adb-7ae2-41e1-b4d6-a7bedf078d0d",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "0,-0.5"
+    }, {
+      "id": "788b5a0a-949b-4209-83f4-b34508e5d332",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "0,-0.5"
+    }, {
+      "id": "903e2a4f-ecb5-4fb6-8cd2-4e0a133e0a60",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "0,-0.5"
+    }, {
+      "id": "0c8eb14a-158d-442c-ae93-55a312c090ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-min > .flex",
+      "targets": [
+        ["css=.h-min > .flex", "css:finder"],
+        ["xpath=//div[@id=':r4:']/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add Movie')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21bc9e19-638b-4a27-ad31-0a6f2fbf099e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "93a43800-ea08-41e4-8870-7fdf92693675",
+    "name": "Caso-3: Agregar 2 películas x Cristopher Nolan.",
+    "commands": [{
+      "id": "e5d482e5-5354-4a7b-b076-bdf7d694d5f1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eecb1429-6fd0-4d4d-9ae6-45522ac98cb7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2673324-28f7-4f3f-b033-bac8300ca814",
+      "comment": "",
+      "command": "click",
+      "target": "id=:r1:-tab-0",
+      "targets": [
+        ["id=:r1:-tab-0", "id"],
+        ["css=#\\3Ar1\\3A-tab-0", "css:finder"],
+        ["xpath=//button[@id=':r1:-tab-0']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/section/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Movies')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5de5f26d-4b04-4c03-83b0-5e940b068b61",
+      "comment": "",
+      "command": "click",
+      "target": "css=#add-movie-btn path",
+      "targets": [
+        ["css=#add-movie-btn path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "609cc3df-cbcf-483d-accd-b54ac6dc8ca0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#add-movie-btn path",
+      "targets": [
+        ["css=#add-movie-btn path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f73f379f-ad11-4563-96b0-bd0e70cec300",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#add-movie-btn path",
+      "targets": [
+        ["css=#add-movie-btn path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "281901b4-9d1b-4c62-a4fd-0376e90eea71",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02c12372-7921-4299-90bb-eaaaac75b77a",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pelicula uno nolan"
+    }, {
+      "id": "fefa9c1f-3da0-485e-945d-5bd14f59ce9c",
+      "comment": "",
+      "command": "click",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fc16732-5d32-4819-a31f-b038cebdfcf3",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "pelicula uno nolan"
+    }, {
+      "id": "e6842a2b-91d9-4bb3-a139-dc93d4b901cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=year",
+      "targets": [
+        ["id=year", "id"],
+        ["css=#year", "css:finder"],
+        ["xpath=//input[@id='year']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac056524-e381-44cb-977e-16a17579377b",
+      "comment": "",
+      "command": "type",
+      "target": "id=year",
+      "targets": [
+        ["id=year", "id"],
+        ["css=#year", "css:finder"],
+        ["xpath=//input[@id='year']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1990"
+    }, {
+      "id": "d49a51ea-a282-46ec-8ea3-703fd4be45b0",
+      "comment": "",
+      "command": "select",
+      "target": "id=director_id",
+      "targets": [],
+      "value": "label=Cristopher Nolan"
+    }, {
+      "id": "54614f2b-677c-467a-908f-6aaad0e200d3",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "0,-0.5"
+    }, {
+      "id": "7b7bf2c7-6593-48c5-9a9b-0b35b6cb3a60",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "0,-0.5"
+    }, {
+      "id": "11d357c8-cae6-43c7-b9cc-2b2296af1f51",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "0,-0.5"
+    }, {
+      "id": "39bbf469-120f-474a-acda-b512b1f50017",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-min > .flex",
+      "targets": [
+        ["css=.h-min > .flex", "css:finder"],
+        ["xpath=//div[@id=':r4:']/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add Movie')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "399ce9c2-1807-4a6a-a899-17f3def83e87",
+      "comment": "",
+      "command": "click",
+      "target": "id=:r1:-tab-0",
+      "targets": [
+        ["id=:r1:-tab-0", "id"],
+        ["css=#\\3Ar1\\3A-tab-0", "css:finder"],
+        ["xpath=//button[@id=':r1:-tab-0']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/section/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Movies')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d7fdbd3-61b7-4948-9e68-500feb0cbd59",
+      "comment": "",
+      "command": "click",
+      "target": "css=#add-movie-btn .w-16",
+      "targets": [
+        ["css=#add-movie-btn .w-16", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f9eed8e-a17e-4523-b071-60b862d70470",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#add-movie-btn .w-16",
+      "targets": [
+        ["css=#add-movie-btn .w-16", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "51ea333d-7ffa-4c07-ab60-3f493a19d8d2",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#add-movie-btn .w-16",
+      "targets": [
+        ["css=#add-movie-btn .w-16", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "618a1036-7b15-4bcd-8752-87edcdb96921",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a95ef3b6-7d81-4498-99b4-642af5f0edc1",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pelicula dos nolan"
+    }, {
+      "id": "50fd276d-95de-4f46-bce2-9c677c874864",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "pelicula dos nolam"
+    }, {
+      "id": "ee7b3d62-788d-47b7-9698-05e677cd8417",
+      "comment": "",
+      "command": "click",
+      "target": "id=year",
+      "targets": [
+        ["id=year", "id"],
+        ["css=#year", "css:finder"],
+        ["xpath=//input[@id='year']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7950c54-d356-463f-b649-44caadec3758",
+      "comment": "",
+      "command": "type",
+      "target": "id=year",
+      "targets": [
+        ["id=year", "id"],
+        ["css=#year", "css:finder"],
+        ["xpath=//input[@id='year']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1990"
+    }, {
+      "id": "133b5a24-38df-4594-b31f-b2dda5a1e717",
+      "comment": "",
+      "command": "select",
+      "target": "id=director_id",
+      "targets": [],
+      "value": "label=Cristopher Nolan"
+    }, {
+      "id": "5bea0598-f8a4-404a-92af-30f285ca1237",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "0,-0.5"
+    }, {
+      "id": "0d6e2d74-9b87-4e95-822c-1a77363ba1d4",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "0,-0.5"
+    }, {
+      "id": "c1b160eb-33d4-4071-be87-22ed37a187d7",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=director_id",
+      "targets": [
+        ["id=director_id", "id"],
+        ["css=#director_id", "css:finder"],
+        ["xpath=//select[@id='director_id']", "xpath:attributes"],
+        ["xpath=//div[@id=':r4:']/div/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "0,-0.5"
+    }, {
+      "id": "2d2f239d-1600-4970-9229-1fb6531377d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-min > .flex",
+      "targets": [
+        ["css=.h-min > .flex", "css:finder"],
+        ["xpath=//div[@id=':r4:']/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add Movie')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "590fc39f-0756-434d-ad77-d4a0c4030316",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "150db4f5-4f72-47a6-9627-bf1c84ae2e28",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}
