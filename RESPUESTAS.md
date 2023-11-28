@@ -1,5 +1,5 @@
 Notas
-Los test se encuentran en la carpeta TEST, se encuentran en python.
+Los test se encuentran en la carpeta TEST.
 Marisleydis Socas Alvez- Equipo 3
 
 
@@ -10,11 +10,20 @@ Dentro de la pirámide de testing, los test de Selenium se ubican en la parte su
 
 2. Indique si el front-end tiene tests unitarios. Si es así, ¿en cuáles archivos se encuentran definidos?
 
-SI, el front-end si posee test unitarios, pero para agregarkis se debe realizar lo siguiente: en el dockerfile, se integra la linea
-CMD ["npm", "test"] en docker-compose tests: build: context: . dockerfile: Dockerfile command: npm test depends_on: - app los test unitarios por defecto del proyecto se encuentran en: movies-front src components *.test.js los terminados en .test.js
+SI, el front-end si posee test unitarios, los podemos encontrar dentro de movies-front, específicamente en las carpetas src/components/AddDirector.test.js y src/components/AddMovie.test.js
 
 3. Para probar test unitarios en GO se usa el comando `go test`. ¿Cómo tendría que modificar el archivo `docker-compose` para correr los tests unitarios del backend?
-En este caso se debe agregar un servicio nuevo tests: build: context: go test ./ dockerfile: Dockerfile command: npm test depends_on: - app
+Para agregar los test unitarios en Go dentro del archivo docker-compose.yml tendriamos que modificar la siguiente linea a "command: go test" para que cuando se levante el docker ejecute el comando indicado.
+
+Ejemplo de como quedaria:
+    tests:
+        build:
+            context: ./movies-api
+            dockerfile: Dockerfile
+        command: go test
 
 Evidencia
-![Alt text](evidencia_tarea3.png)
+![Alt text](evidencia01.png)
+![Alt text](evidencia02.png)
+![Alt text](evidencia03.png)
+![Alt text](evidencia04.png)
