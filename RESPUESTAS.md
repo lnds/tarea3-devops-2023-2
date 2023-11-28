@@ -1,7 +1,7 @@
 Notas
-Los test se encuentran en la carpeta TEST.
-Marisleydis Socas Alvez- Equipo 3
 
+#Marisleydis Socas Alvez- Equipo 3
+#Los test se encuentran en la carpeta TEST.
 
 ## Preguntas
 
